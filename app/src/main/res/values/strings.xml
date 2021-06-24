@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MadarTask</string>
+    <string name="users">Users</string>
+    <string name="edit">Edit</string>
+    <string name="delete_all">Delete All Users</string>
+
+    <string name="error">Required Field</string>
+    <string name="wrong">wrong entry</string>
+    <string name="errorAge">Error (must > 15 )</string>
+    <string name="errorGender">Error (Enter M/Male/F/Female)</string>
+    <string name="welecome">Welecome</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_job_title">Enter Job Title</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="enter_gender_m_f">Enter Gender (M/F)</string>
+    <string name="add_user_info">ADD USER INFO</string>
+    <string name="name">NAME :</string>
+    <string name="job_title">JOB TITLE :</string>
+    <string name="age">AGE :</string>
+    <string name="gender">GENDER :</string>
+    <string name="no_users_message">NO USERS HERE TO SHOW ;(</string>
+    <string name="userAdded">SUCCESSFULLY, USER ADDED</string>
+    <string name="CorrectInfo">Please be sure to enter the correct information</string>
+    <string name="username">Username is : </string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/shape_et"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="@dimen/_16dp"
+        android:fontFamily="casual"
+        android:hint="@string/enter_name"
+        android:inputType="textPersonName"
+        android:padding="@dimen/_16dp"
+        android:textSize="@dimen/_24sp"
+        app:layout_constraintBottom_toTopOf="@+id/jobTitleEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <EditText
+        android:id="@+id/jobTitleEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/shape_et"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="@dimen/_16dp"
+        android:fontFamily="casual"
+        android:hint="@string/enter_job_title"
+        android:inputType="textPersonName"
+        android:padding="@dimen/_16dp"
+        android:textSize="@dimen/_24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ageEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/shape_et"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="@dimen/_16dp"
+        android:fontFamily="casual"
+        android:hint="@string/enter_age"
+        android:inputType="number"
+        android:padding="@dimen/_16dp"
+        android:textSize="@dimen/_24sp"
+        app:layout_constraintBottom_toTopOf="@+id/genderEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobTitleEditText" />
+
+    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/shape_et"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="@dimen/_16dp"
+        android:fontFamily="casual"
+        android:hint="@string/enter_gender_m_f"
+        android:inputType="textPersonName"
+        android:padding="@dimen/_16dp"
+        android:textSize="@dimen/_24sp"
+        app:layout_constraintBottom_toTopOf="@+id/addFloatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageEditText" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_32dp"
+        android:layout_marginBottom="@dimen/_32dp"
+        android:backgroundTint="@color/purple_700"
+        android:clickable="true"
+        android:tintMode="@color/white"
+        app:fabCustomSize="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_person_add" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="casual"
+        android:text="@string/add_user_info"
+        android:textColor="@color/purple_700"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+</androidx.constraintlayout.widget.ConstraintLayout>
